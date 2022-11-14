@@ -10,5 +10,3 @@
 Create a new environment
 
 conda create -p venv python python==3.7 -y
-
-# We will work on this environment
