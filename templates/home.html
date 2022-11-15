@@ -1,3 +1,45 @@
-<h1>
-    Jai Shri Krishna bolo Jai Radhe
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>California Housing Price</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>California House Price Prediction.<br>
+        This model predicts median price of a house in a block in California.<br>
+        All inputs are averaged from the block.<br>
+        Since the model predicts house prices in California, please make sure that Latitude and Longitude values are valid values for California.<br>
+        Latitude - 32.54 to 41.95<br>
+        Longitude - -124.35 to -114.31<br>
+    </h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Median Income" placeholder="MedInc" required="required" /><br>
+    	<input type="text" name="Age of House" placeholder="HouseAge" required="required" /><br>
+        <input type="text" name="Average Rooms" placeholder="AveRooms" required="required" /><br>
+        <input type="text" name="Average Bedrooms" placeholder="AveBrdrms" required="required" /><br>
+        <input type="text" name="Population" placeholder="Population" required="required" /><br>
+        <input type="text" name="Average Occupiers" placeholder="AveOccup" required="required" /><br>
+        <input type="text" name="Latitude" placeholder="Latitude" required="required" /><br>
+        <input type="text" name="Longtitude" placeholder="Longitude" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
