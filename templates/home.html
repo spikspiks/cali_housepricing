@@ -19,7 +19,7 @@
       The target variable is the median house value for California districts.<br>
       All attributes are collected from the block.<br>
       Attributes: <br>
-        - MedInc        median income in block group <br>
+        - MedInc        median income in block group (measured in $10,000) <br>
         - HouseAge      median house age in block group <br>
         - AveRooms      average number of rooms per household <br>
         - AveBedrms     average number of bedrooms per household <br>
@@ -35,7 +35,7 @@
   </h1>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <label for="Median Income">Median Income in Block Group</label><br>
+      <label for="Median Income">Median Income in Block Group (in $10,000)</label><br>
       <input type="text" name="Median Income" placeholder="MedInc" required="required" /><br>
       <label for="Age of House">Median House Age in Block Group</label><br>
     	<input type="text" name="Age of House" placeholder="HouseAge" required="required" /><br>
