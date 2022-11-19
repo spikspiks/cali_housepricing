@@ -1,11 +1,6 @@
 # California Housing Price Dataset 
 #
-# Soft and Tools requirements
-
-
-1. [GithubAccount](https://github.com)
-2. [HerokuAccount](https://heroku.com)
-3. [VSCodeIDE](https://code.visualstudio.com)
+# Software and Tools requirements
 
 Create a new environment:
 conda create -p venv python python==3.7 -y
