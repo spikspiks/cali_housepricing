@@ -3,7 +3,7 @@
 # Software and Tools requirements
 
 Create a new environment:
-conda create -p venv python python==3.7 -y
+conda create -p venv python python==3.9.12 -y
 
 Install libraries:
 pip install -r requirements.txt
